@@ -1,0 +1,72 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: linear-gradient(#22a29d, #0d6964)
+}
+.g-wrap{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column
+
+}
+.card-box{
+    display: inline-block;
+    position:relative;
+}
+.card-box.card-normal:after {
+    position: absolute;
+    left: 7px;
+    top: 1px;
+    display: block;
+    width: 193px;
+    height: 263px;
+    content: '';
+    transition: all 0.5s ease;
+    border-radius: 7px;
+    box-shadow: 0 3px 10px 5px #3cdad4;
+}
+.card-box.card-mask:after{
+    position: absolute;
+    left: 7px;
+    top: 1px;
+    display: block;
+    width: 193px;
+    height: 263px;
+    background-color: rgba(0, 0, 0, 0.3);
+    content: '';
+    transition: all 0.5s ease;
+    border-radius: 7px;
+}
+.card-box.card-checked:after{
+    position: absolute;
+    left: 7px;
+    top: 1px;
+    display: block;
+    width: 193px;
+    height: 263px;
+    content: '';
+    transition: all 0.5s ease;
+    border-radius: 7px;
+    box-shadow: 0 0 8px 8px #f9f5e9;
+}
+
+.gf-ft {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gf-btn {
+    display: inline-block;
+    background: linear-gradient(to top, #d46a33, #ce4f1f);
+    line-height: 64px;
+    border-radius: 32px;
+    font-size: 26px;
+    letter-spacing: 3px;
+    color: #f9dc9f;
+    padding: 0px 70px;
+    box-shadow: 0 5px 20px #f9dc9f;
+}
